@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7547DA87FE2E3F37865CFD /* libPods-PDBarrageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F176396A44AC3F52EF1E1AE /* libPods-PDBarrageUITests.a */; };
+		A180DB8159338BAEFA72D473 /* libPods-PDBarrage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D54958BC6694682EEBDA82 /* libPods-PDBarrage.a */; };
 		ECC8F307203FC14D00D7C1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F306203FC14D00D7C1CA /* AppDelegate.m */; };
 		ECC8F30A203FC14D00D7C1CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F309203FC14D00D7C1CA /* ViewController.m */; };
 		ECC8F30D203FC14D00D7C1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC8F30B203FC14D00D7C1CA /* Main.storyboard */; };
@@ -15,6 +17,15 @@
 		ECC8F315203FC14D00D7C1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F314203FC14D00D7C1CA /* main.m */; };
 		ECC8F31F203FC14D00D7C1CA /* PDBarrageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F31E203FC14D00D7C1CA /* PDBarrageTests.m */; };
 		ECC8F32A203FC14D00D7C1CA /* PDBarrageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F329203FC14D00D7C1CA /* PDBarrageUITests.m */; };
+		ECC8F33A203FC26300D7C1CA /* PDBulletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F339203FC26300D7C1CA /* PDBulletCell.m */; };
+		ECC8F33F203FC30500D7C1CA /* UIView+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */; };
+		ECC8F342203FC31000D7C1CA /* CALayer+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */; };
+		ECC8F348203FC6B700D7C1CA /* UIColor+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */; };
+		ECC8F34D203FF3E500D7C1CA /* UILabel+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */; };
+		ECC8F350203FFD5900D7C1CA /* PDTrajectoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */; };
+		ECC8F353203FFDFC00D7C1CA /* PDBulletController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */; };
+		ECC8F3592040017400D7C1CA /* PDBulletEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F3582040017400D7C1CA /* PDBulletEntity.m */; };
+		FFB8AE2A7719390FE304E332 /* libPods-PDBarrageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F176396A44AC3F52EF1E1AE /* libPods-PDBarrageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29137C35E8041EDBED3AC248 /* Pods-PDBarrageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageTests/Pods-PDBarrageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D0F38C88B872F79FFF5004E /* Pods-PDBarrageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A7C9AE477B9522DF53E1E5 /* Pods-PDBarrage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3AC778772FD4199A248D48 /* Pods-PDBarrage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrage.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage.release.xcconfig"; sourceTree = "<group>"; };
+		B192051ABDFAC302A354F8B3 /* Pods-PDBarrageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageTests/Pods-PDBarrageTests.release.xcconfig"; sourceTree = "<group>"; };
+		EADD3688CF136D30E6CA91AD /* Pods-PDBarrageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC532DF620402BDC0087DE1A /* PDBarrage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBarrage.h; sourceTree = "<group>"; };
 		ECC8F302203FC14D00D7C1CA /* PDBarrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDBarrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8F305203FC14D00D7C1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECC8F306203FC14D00D7C1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +71,24 @@
 		ECC8F325203FC14D00D7C1CA /* PDBarrageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDBarrageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8F329203FC14D00D7C1CA /* PDBarrageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBarrageUITests.m; sourceTree = "<group>"; };
 		ECC8F32B203FC14D00D7C1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC8F338203FC26300D7C1CA /* PDBulletCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletCell.h; sourceTree = "<group>"; };
+		ECC8F339203FC26300D7C1CA /* PDBulletCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletCell.m; sourceTree = "<group>"; };
+		ECC8F33D203FC30500D7C1CA /* UIView+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PDAdd.h"; sourceTree = "<group>"; };
+		ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDAdd.m"; sourceTree = "<group>"; };
+		ECC8F340203FC31000D7C1CA /* CALayer+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+PDAdd.h"; sourceTree = "<group>"; };
+		ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PDAdd.m"; sourceTree = "<group>"; };
+		ECC8F346203FC6B700D7C1CA /* UIColor+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+PDAdd.h"; sourceTree = "<group>"; };
+		ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PDAdd.m"; sourceTree = "<group>"; };
+		ECC8F34A203FF14200D7C1CA /* PDCustomMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCustomMacro.h; sourceTree = "<group>"; };
+		ECC8F34B203FF3E500D7C1CA /* UILabel+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+PDAdd.h"; sourceTree = "<group>"; };
+		ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PDAdd.m"; sourceTree = "<group>"; };
+		ECC8F34E203FFD5900D7C1CA /* PDTrajectoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTrajectoryView.h; sourceTree = "<group>"; };
+		ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTrajectoryView.m; sourceTree = "<group>"; };
+		ECC8F351203FFDFC00D7C1CA /* PDBulletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletController.h; sourceTree = "<group>"; };
+		ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletController.m; sourceTree = "<group>"; };
+		ECC8F3572040017400D7C1CA /* PDBulletEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletEntity.h; sourceTree = "<group>"; };
+		ECC8F3582040017400D7C1CA /* PDBulletEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletEntity.m; sourceTree = "<group>"; };
+		F5D54958BC6694682EEBDA82 /* libPods-PDBarrage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A180DB8159338BAEFA72D473 /* libPods-PDBarrage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB8AE2A7719390FE304E332 /* libPods-PDBarrageTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7547DA87FE2E3F37865CFD /* libPods-PDBarrageUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A742853F19BD3D9B78FB121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A7C9AE477B9522DF53E1E5 /* Pods-PDBarrage.debug.xcconfig */,
+				AF3AC778772FD4199A248D48 /* Pods-PDBarrage.release.xcconfig */,
+				29137C35E8041EDBED3AC248 /* Pods-PDBarrageTests.debug.xcconfig */,
+				B192051ABDFAC302A354F8B3 /* Pods-PDBarrageTests.release.xcconfig */,
+				2D0F38C88B872F79FFF5004E /* Pods-PDBarrageUITests.debug.xcconfig */,
+				EADD3688CF136D30E6CA91AD /* Pods-PDBarrageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7E078E95D5FBE36927F51EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D54958BC6694682EEBDA82 /* libPods-PDBarrage.a */,
+				EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */,
+				0F176396A44AC3F52EF1E1AE /* libPods-PDBarrageUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECC8F2F9203FC14D00D7C1CA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +149,8 @@
 				ECC8F31D203FC14D00D7C1CA /* PDBarrageTests */,
 				ECC8F328203FC14D00D7C1CA /* PDBarrageUITests */,
 				ECC8F303203FC14D00D7C1CA /* Products */,
+				9A742853F19BD3D9B78FB121 /* Pods */,
+				C7E078E95D5FBE36927F51EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +167,7 @@
 		ECC8F304203FC14D00D7C1CA /* PDBarrage */ = {
 			isa = PBXGroup;
 			children = (
+				ECC8F337203FC15200D7C1CA /* Source */,
 				ECC8F305203FC14D00D7C1CA /* AppDelegate.h */,
 				ECC8F306203FC14D00D7C1CA /* AppDelegate.m */,
 				ECC8F308203FC14D00D7C1CA /* ViewController.h */,
@@ -132,6 +199,55 @@
 			path = PDBarrageUITests;
 			sourceTree = "<group>";
 		};
+		ECC8F337203FC15200D7C1CA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8F33C203FC2DD00D7C1CA /* Barrage */,
+				ECC8F33B203FC2C800D7C1CA /* Category */,
+				ECC8F349203FF0C100D7C1CA /* Macro */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ECC8F33B203FC2C800D7C1CA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8F33D203FC30500D7C1CA /* UIView+PDAdd.h */,
+				ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */,
+				ECC8F340203FC31000D7C1CA /* CALayer+PDAdd.h */,
+				ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */,
+				ECC8F346203FC6B700D7C1CA /* UIColor+PDAdd.h */,
+				ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */,
+				ECC8F34B203FF3E500D7C1CA /* UILabel+PDAdd.h */,
+				ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ECC8F33C203FC2DD00D7C1CA /* Barrage */ = {
+			isa = PBXGroup;
+			children = (
+				EC532DF620402BDC0087DE1A /* PDBarrage.h */,
+				ECC8F3572040017400D7C1CA /* PDBulletEntity.h */,
+				ECC8F3582040017400D7C1CA /* PDBulletEntity.m */,
+				ECC8F338203FC26300D7C1CA /* PDBulletCell.h */,
+				ECC8F339203FC26300D7C1CA /* PDBulletCell.m */,
+				ECC8F34E203FFD5900D7C1CA /* PDTrajectoryView.h */,
+				ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */,
+				ECC8F351203FFDFC00D7C1CA /* PDBulletController.h */,
+				ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */,
+			);
+			path = Barrage;
+			sourceTree = "<group>";
+		};
+		ECC8F349203FF0C100D7C1CA /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8F34A203FF14200D7C1CA /* PDCustomMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC8F32E203FC14D00D7C1CA /* Build configuration list for PBXNativeTarget "PDBarrage" */;
 			buildPhases = (
+				178E97E63B4712149D94B356 /* [CP] Check Pods Manifest.lock */,
 				ECC8F2FE203FC14D00D7C1CA /* Sources */,
 				ECC8F2FF203FC14D00D7C1CA /* Frameworks */,
 				ECC8F300203FC14D00D7C1CA /* Resources */,
+				21525B00B6711B36B4C704E7 /* [CP] Embed Pods Frameworks */,
+				CC5498680819C1BA2AA44180 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC8F331203FC14D00D7C1CA /* Build configuration list for PBXNativeTarget "PDBarrageTests" */;
 			buildPhases = (
+				BD81BC76675A80DF3854E65C /* [CP] Check Pods Manifest.lock */,
 				ECC8F316203FC14D00D7C1CA /* Sources */,
 				ECC8F317203FC14D00D7C1CA /* Frameworks */,
 				ECC8F318203FC14D00D7C1CA /* Resources */,
+				C6A20C5E16D0BF09F015A40D /* [CP] Embed Pods Frameworks */,
+				49C52B718C53E33818888933 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC8F334203FC14D00D7C1CA /* Build configuration list for PBXNativeTarget "PDBarrageUITests" */;
 			buildPhases = (
+				F08121836633D71A147CB2EA /* [CP] Check Pods Manifest.lock */,
 				ECC8F321203FC14D00D7C1CA /* Sources */,
 				ECC8F322203FC14D00D7C1CA /* Frameworks */,
 				ECC8F323203FC14D00D7C1CA /* Resources */,
+				CB2E58BC675E4B8B0F94E72A /* [CP] Embed Pods Frameworks */,
+				25F28F6746DEE1D8D953B9E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +385,169 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		178E97E63B4712149D94B356 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDBarrage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21525B00B6711B36B4C704E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25F28F6746DEE1D8D953B9E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49C52B718C53E33818888933 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrageTests/Pods-PDBarrageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD81BC76675A80DF3854E65C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDBarrageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A20C5E16D0BF09F015A40D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrageTests/Pods-PDBarrageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2E58BC675E4B8B0F94E72A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5498680819C1BA2AA44180 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08121836633D71A147CB2EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDBarrageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECC8F2FE203FC14D00D7C1CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC8F353203FFDFC00D7C1CA /* PDBulletController.m in Sources */,
 				ECC8F30A203FC14D00D7C1CA /* ViewController.m in Sources */,
+				ECC8F342203FC31000D7C1CA /* CALayer+PDAdd.m in Sources */,
+				ECC8F33A203FC26300D7C1CA /* PDBulletCell.m in Sources */,
+				ECC8F34D203FF3E500D7C1CA /* UILabel+PDAdd.m in Sources */,
 				ECC8F315203FC14D00D7C1CA /* main.m in Sources */,
+				ECC8F33F203FC30500D7C1CA /* UIView+PDAdd.m in Sources */,
 				ECC8F307203FC14D00D7C1CA /* AppDelegate.m in Sources */,
+				ECC8F348203FC6B700D7C1CA /* UIColor+PDAdd.m in Sources */,
+				ECC8F3592040017400D7C1CA /* PDBulletEntity.m in Sources */,
+				ECC8F350203FFD5900D7C1CA /* PDTrajectoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +708,7 @@
 		};
 		ECC8F32F203FC14D00D7C1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A7C9AE477B9522DF53E1E5 /* Pods-PDBarrage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +722,7 @@
 		};
 		ECC8F330203FC14D00D7C1CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF3AC778772FD4199A248D48 /* Pods-PDBarrage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +736,7 @@
 		};
 		ECC8F332203FC14D00D7C1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29137C35E8041EDBED3AC248 /* Pods-PDBarrageTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +751,7 @@
 		};
 		ECC8F333203FC14D00D7C1CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B192051ABDFAC302A354F8B3 /* Pods-PDBarrageTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +766,7 @@
 		};
 		ECC8F335203FC14D00D7C1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D0F38C88B872F79FFF5004E /* Pods-PDBarrageUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDBarrageUITests/Info.plist;
@@ -495,6 +780,7 @@
 		};
 		ECC8F336203FC14D00D7C1CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADD3688CF136D30E6CA91AD /* Pods-PDBarrageUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDBarrageUITests/Info.plist;
