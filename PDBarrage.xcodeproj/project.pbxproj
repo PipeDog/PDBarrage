@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3C7547DA87FE2E3F37865CFD /* libPods-PDBarrageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F176396A44AC3F52EF1E1AE /* libPods-PDBarrageUITests.a */; };
 		A180DB8159338BAEFA72D473 /* libPods-PDBarrage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D54958BC6694682EEBDA82 /* libPods-PDBarrage.a */; };
+		DD275B592408D51A00F51E89 /* CADisplayLink+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DD275B582408D51A00F51E89 /* CADisplayLink+PDAdd.m */; };
+		DD275B5C2408E29D00F51E89 /* PDDanmakuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD275B5B2408E29D00F51E89 /* PDDanmakuController.m */; };
+		DD275B5F2408E30400F51E89 /* PDDanmakuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD275B5E2408E30400F51E89 /* PDDanmakuItemCell.m */; };
+		DD275B632408E92600F51E89 /* PDDanmakuBeltView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD275B622408E92600F51E89 /* PDDanmakuBeltView.m */; };
+		DD275B662408EBA400F51E89 /* PDDanmakuItemQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */; };
 		ECC8F307203FC14D00D7C1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F306203FC14D00D7C1CA /* AppDelegate.m */; };
 		ECC8F30A203FC14D00D7C1CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F309203FC14D00D7C1CA /* ViewController.m */; };
 		ECC8F30D203FC14D00D7C1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC8F30B203FC14D00D7C1CA /* Main.storyboard */; };
@@ -52,6 +57,17 @@
 		A7A7C9AE477B9522DF53E1E5 /* Pods-PDBarrage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3AC778772FD4199A248D48 /* Pods-PDBarrage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrage.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrage/Pods-PDBarrage.release.xcconfig"; sourceTree = "<group>"; };
 		B192051ABDFAC302A354F8B3 /* Pods-PDBarrageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageTests/Pods-PDBarrageTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD275B572408D51A00F51E89 /* CADisplayLink+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+PDAdd.h"; sourceTree = "<group>"; };
+		DD275B582408D51A00F51E89 /* CADisplayLink+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CADisplayLink+PDAdd.m"; sourceTree = "<group>"; };
+		DD275B5A2408E29D00F51E89 /* PDDanmakuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDanmakuController.h; sourceTree = "<group>"; };
+		DD275B5B2408E29D00F51E89 /* PDDanmakuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDanmakuController.m; sourceTree = "<group>"; };
+		DD275B5D2408E30400F51E89 /* PDDanmakuItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDanmakuItemCell.h; sourceTree = "<group>"; };
+		DD275B5E2408E30400F51E89 /* PDDanmakuItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDanmakuItemCell.m; sourceTree = "<group>"; };
+		DD275B602408E34A00F51E89 /* PDDanmakuItemCell+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDDanmakuItemCell+Internal.h"; sourceTree = "<group>"; };
+		DD275B612408E92600F51E89 /* PDDanmakuBeltView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDanmakuBeltView.h; sourceTree = "<group>"; };
+		DD275B622408E92600F51E89 /* PDDanmakuBeltView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDanmakuBeltView.m; sourceTree = "<group>"; };
+		DD275B642408EBA400F51E89 /* PDDanmakuItemQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDanmakuItemQueue.h; sourceTree = "<group>"; };
+		DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDanmakuItemQueue.m; sourceTree = "<group>"; };
 		EADD3688CF136D30E6CA91AD /* Pods-PDBarrageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC532DF620402BDC0087DE1A /* PDBarrage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBarrage.h; sourceTree = "<group>"; };
@@ -142,6 +158,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD275B402407BD5D00F51E89 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD275B572408D51A00F51E89 /* CADisplayLink+PDAdd.h */,
+				DD275B582408D51A00F51E89 /* CADisplayLink+PDAdd.m */,
+				DD275B5A2408E29D00F51E89 /* PDDanmakuController.h */,
+				DD275B5B2408E29D00F51E89 /* PDDanmakuController.m */,
+				DD275B602408E34A00F51E89 /* PDDanmakuItemCell+Internal.h */,
+				DD275B5D2408E30400F51E89 /* PDDanmakuItemCell.h */,
+				DD275B5E2408E30400F51E89 /* PDDanmakuItemCell.m */,
+				DD275B612408E92600F51E89 /* PDDanmakuBeltView.h */,
+				DD275B622408E92600F51E89 /* PDDanmakuBeltView.m */,
+				DD275B642408EBA400F51E89 /* PDDanmakuItemQueue.h */,
+				DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		ECC8F2F9203FC14D00D7C1CA = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +236,7 @@
 		ECC8F337203FC15200D7C1CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DD275B402407BD5D00F51E89 /* Core */,
 				ECC8F33C203FC2DD00D7C1CA /* Barrage */,
 				ECC8F33B203FC2C800D7C1CA /* Category */,
 				ECC8F349203FF0C100D7C1CA /* Macro */,
@@ -539,10 +574,15 @@
 			files = (
 				ECC8F353203FFDFC00D7C1CA /* PDBulletController.m in Sources */,
 				ECC8F30A203FC14D00D7C1CA /* ViewController.m in Sources */,
+				DD275B5F2408E30400F51E89 /* PDDanmakuItemCell.m in Sources */,
 				ECC8F342203FC31000D7C1CA /* CALayer+PDAdd.m in Sources */,
+				DD275B662408EBA400F51E89 /* PDDanmakuItemQueue.m in Sources */,
 				ECC8F33A203FC26300D7C1CA /* PDBulletCell.m in Sources */,
+				DD275B632408E92600F51E89 /* PDDanmakuBeltView.m in Sources */,
 				ECC8F34D203FF3E500D7C1CA /* UILabel+PDAdd.m in Sources */,
+				DD275B592408D51A00F51E89 /* CADisplayLink+PDAdd.m in Sources */,
 				ECC8F315203FC14D00D7C1CA /* main.m in Sources */,
+				DD275B5C2408E29D00F51E89 /* PDDanmakuController.m in Sources */,
 				ECC8F33F203FC30500D7C1CA /* UIView+PDAdd.m in Sources */,
 				ECC8F307203FC14D00D7C1CA /* AppDelegate.m in Sources */,
 				ECC8F348203FC6B700D7C1CA /* UIColor+PDAdd.m in Sources */,
