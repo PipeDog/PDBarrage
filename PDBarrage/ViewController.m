@@ -7,16 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "PDBarrage.h"
 #import <Masonry/Masonry.h>
-#import "UIColor+PDAdd.h"
 #import "PDDanmakuController.h"
 
 @interface ViewController () <PDDanmakuControllerDelegate, PDDanmakuControllerDataSource>
 
 @property (weak, nonatomic) IBOutlet UIButton *sendBulletButton;
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (nonatomic, strong) PDBulletController *bulletController;
 @property (nonatomic, strong) NSArray<NSString *> *dataArray;
 @property (nonatomic, strong) PDDanmakuController *danmakuController;
 
@@ -27,23 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"Bullet Test Page";
-    [self layoutUI];
-    //[self observeTouchBulletEvent];
+    [self commitInit];
+    [self createViewHierarchy];
+    [self layoutContentViews];
 }
 
-- (void)layoutUI {
-//    CGFloat const bulletControllerHeight = PDBulletControllerTrajectoryViewHeight * self.bulletController.trajectoryCount;
-//
-//    [self.bulletController.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.width.left.equalTo(self.view);
-//        make.bottom.equalTo(self.textLabel.mas_top);
-//        make.height.mas_equalTo(bulletControllerHeight);
-//    }];
-    
+- (void)commitInit {
+    self.title = @"Bullet Test Page";
+}
+
+- (void)createViewHierarchy {
     [self addChildViewController:self.danmakuController];
     [self.view addSubview:self.danmakuController.view];
-    
+}
+
+- (void)layoutContentViews {
     [self.danmakuController.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(100.f);
         make.left.and.right.equalTo(self.view);
@@ -51,22 +46,7 @@
     }];
 }
 
-- (void)observeTouchBulletEvent {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchInsideBulletNotification:) name:PDBulletControllerTouchBulletNotification object:nil];
-}
-
-- (void)touchInsideBulletNotification:(NSNotification *)notification {
-    PDBulletEntity *entity = notification.object;
-    self.textLabel.text = entity.text;
-}
-
 - (IBAction)didClickButton:(id)sender {
-//    PDBulletEntity *entity = [[PDBulletEntity alloc] init];
-//    entity.text = self.dataArray[rand() % 10];
-//    entity.textColorValue = @"0xFFFFFF";
-//    entity.backgroundColorValue = @"#5566FF99";
-//    [self.bulletController receiveMessage:entity];
-    
     NSString *text = self.dataArray[rand() % 10];
     [self.danmakuController receiveItem:text];
 }
@@ -99,20 +79,10 @@
 }
 
 - (void)danmakuController:(PDDanmakuController *)danmakuController didSelectItemInCell:(__kindof PDDanmakuItemCell *)cell {
-    NSLog(@"item => %@", cell.item);
+    self.textLabel.text = cell.item;
 }
 
 #pragma mark - Getter Methods
-- (PDBulletController *)bulletController {
-    if (!_bulletController) {
-        _bulletController = [[PDBulletController alloc] init];
-        _bulletController.trajectoryCount = 3;
-        _bulletController.view.backgroundColor = UIColorHex(0xFFDD00);
-        [self.view addSubview:_bulletController.view];
-    }
-    return _bulletController;
-}
-
 - (NSArray<NSString *> *)dataArray {
     if (!_dataArray) {
         _dataArray = @[@"将进酒",

@@ -22,14 +22,6 @@
 		ECC8F315203FC14D00D7C1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F314203FC14D00D7C1CA /* main.m */; };
 		ECC8F31F203FC14D00D7C1CA /* PDBarrageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F31E203FC14D00D7C1CA /* PDBarrageTests.m */; };
 		ECC8F32A203FC14D00D7C1CA /* PDBarrageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F329203FC14D00D7C1CA /* PDBarrageUITests.m */; };
-		ECC8F33A203FC26300D7C1CA /* PDBulletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F339203FC26300D7C1CA /* PDBulletCell.m */; };
-		ECC8F33F203FC30500D7C1CA /* UIView+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */; };
-		ECC8F342203FC31000D7C1CA /* CALayer+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */; };
-		ECC8F348203FC6B700D7C1CA /* UIColor+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */; };
-		ECC8F34D203FF3E500D7C1CA /* UILabel+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */; };
-		ECC8F350203FFD5900D7C1CA /* PDTrajectoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */; };
-		ECC8F353203FFDFC00D7C1CA /* PDBulletController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */; };
-		ECC8F3592040017400D7C1CA /* PDBulletEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8F3582040017400D7C1CA /* PDBulletEntity.m */; };
 		FFB8AE2A7719390FE304E332 /* libPods-PDBarrageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +62,6 @@
 		DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDanmakuItemQueue.m; sourceTree = "<group>"; };
 		EADD3688CF136D30E6CA91AD /* Pods-PDBarrageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDBarrageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDBarrageUITests/Pods-PDBarrageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAEFA1CA55BE6F428ADB7857 /* libPods-PDBarrageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC532DF620402BDC0087DE1A /* PDBarrage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBarrage.h; sourceTree = "<group>"; };
 		ECC8F302203FC14D00D7C1CA /* PDBarrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDBarrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8F305203FC14D00D7C1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECC8F306203FC14D00D7C1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,23 +78,6 @@
 		ECC8F325203FC14D00D7C1CA /* PDBarrageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDBarrageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8F329203FC14D00D7C1CA /* PDBarrageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBarrageUITests.m; sourceTree = "<group>"; };
 		ECC8F32B203FC14D00D7C1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECC8F338203FC26300D7C1CA /* PDBulletCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletCell.h; sourceTree = "<group>"; };
-		ECC8F339203FC26300D7C1CA /* PDBulletCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletCell.m; sourceTree = "<group>"; };
-		ECC8F33D203FC30500D7C1CA /* UIView+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PDAdd.h"; sourceTree = "<group>"; };
-		ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDAdd.m"; sourceTree = "<group>"; };
-		ECC8F340203FC31000D7C1CA /* CALayer+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+PDAdd.h"; sourceTree = "<group>"; };
-		ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PDAdd.m"; sourceTree = "<group>"; };
-		ECC8F346203FC6B700D7C1CA /* UIColor+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+PDAdd.h"; sourceTree = "<group>"; };
-		ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PDAdd.m"; sourceTree = "<group>"; };
-		ECC8F34A203FF14200D7C1CA /* PDCustomMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCustomMacro.h; sourceTree = "<group>"; };
-		ECC8F34B203FF3E500D7C1CA /* UILabel+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+PDAdd.h"; sourceTree = "<group>"; };
-		ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PDAdd.m"; sourceTree = "<group>"; };
-		ECC8F34E203FFD5900D7C1CA /* PDTrajectoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTrajectoryView.h; sourceTree = "<group>"; };
-		ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTrajectoryView.m; sourceTree = "<group>"; };
-		ECC8F351203FFDFC00D7C1CA /* PDBulletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletController.h; sourceTree = "<group>"; };
-		ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletController.m; sourceTree = "<group>"; };
-		ECC8F3572040017400D7C1CA /* PDBulletEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBulletEntity.h; sourceTree = "<group>"; };
-		ECC8F3582040017400D7C1CA /* PDBulletEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBulletEntity.m; sourceTree = "<group>"; };
 		F5D54958BC6694682EEBDA82 /* libPods-PDBarrage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDBarrage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,24 +130,6 @@
 				0F176396A44AC3F52EF1E1AE /* libPods-PDBarrageUITests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD275B402407BD5D00F51E89 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				DD275B572408D51A00F51E89 /* CADisplayLink+PDAdd.h */,
-				DD275B582408D51A00F51E89 /* CADisplayLink+PDAdd.m */,
-				DD275B5A2408E29D00F51E89 /* PDDanmakuController.h */,
-				DD275B5B2408E29D00F51E89 /* PDDanmakuController.m */,
-				DD275B602408E34A00F51E89 /* PDDanmakuItemCell+Internal.h */,
-				DD275B5D2408E30400F51E89 /* PDDanmakuItemCell.h */,
-				DD275B5E2408E30400F51E89 /* PDDanmakuItemCell.m */,
-				DD275B612408E92600F51E89 /* PDDanmakuBeltView.h */,
-				DD275B622408E92600F51E89 /* PDDanmakuBeltView.m */,
-				DD275B642408EBA400F51E89 /* PDDanmakuItemQueue.h */,
-				DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		ECC8F2F9203FC14D00D7C1CA = {
@@ -236,51 +192,19 @@
 		ECC8F337203FC15200D7C1CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DD275B402407BD5D00F51E89 /* Core */,
-				ECC8F33C203FC2DD00D7C1CA /* Barrage */,
-				ECC8F33B203FC2C800D7C1CA /* Category */,
-				ECC8F349203FF0C100D7C1CA /* Macro */,
+				DD275B572408D51A00F51E89 /* CADisplayLink+PDAdd.h */,
+				DD275B582408D51A00F51E89 /* CADisplayLink+PDAdd.m */,
+				DD275B5A2408E29D00F51E89 /* PDDanmakuController.h */,
+				DD275B5B2408E29D00F51E89 /* PDDanmakuController.m */,
+				DD275B602408E34A00F51E89 /* PDDanmakuItemCell+Internal.h */,
+				DD275B5D2408E30400F51E89 /* PDDanmakuItemCell.h */,
+				DD275B5E2408E30400F51E89 /* PDDanmakuItemCell.m */,
+				DD275B612408E92600F51E89 /* PDDanmakuBeltView.h */,
+				DD275B622408E92600F51E89 /* PDDanmakuBeltView.m */,
+				DD275B642408EBA400F51E89 /* PDDanmakuItemQueue.h */,
+				DD275B652408EBA400F51E89 /* PDDanmakuItemQueue.m */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		ECC8F33B203FC2C800D7C1CA /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				ECC8F33D203FC30500D7C1CA /* UIView+PDAdd.h */,
-				ECC8F33E203FC30500D7C1CA /* UIView+PDAdd.m */,
-				ECC8F340203FC31000D7C1CA /* CALayer+PDAdd.h */,
-				ECC8F341203FC31000D7C1CA /* CALayer+PDAdd.m */,
-				ECC8F346203FC6B700D7C1CA /* UIColor+PDAdd.h */,
-				ECC8F347203FC6B700D7C1CA /* UIColor+PDAdd.m */,
-				ECC8F34B203FF3E500D7C1CA /* UILabel+PDAdd.h */,
-				ECC8F34C203FF3E500D7C1CA /* UILabel+PDAdd.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		ECC8F33C203FC2DD00D7C1CA /* Barrage */ = {
-			isa = PBXGroup;
-			children = (
-				EC532DF620402BDC0087DE1A /* PDBarrage.h */,
-				ECC8F3572040017400D7C1CA /* PDBulletEntity.h */,
-				ECC8F3582040017400D7C1CA /* PDBulletEntity.m */,
-				ECC8F338203FC26300D7C1CA /* PDBulletCell.h */,
-				ECC8F339203FC26300D7C1CA /* PDBulletCell.m */,
-				ECC8F34E203FFD5900D7C1CA /* PDTrajectoryView.h */,
-				ECC8F34F203FFD5900D7C1CA /* PDTrajectoryView.m */,
-				ECC8F351203FFDFC00D7C1CA /* PDBulletController.h */,
-				ECC8F352203FFDFC00D7C1CA /* PDBulletController.m */,
-			);
-			path = Barrage;
-			sourceTree = "<group>";
-		};
-		ECC8F349203FF0C100D7C1CA /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				ECC8F34A203FF14200D7C1CA /* PDCustomMacro.h */,
-			);
-			path = Macro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,22 +496,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC8F353203FFDFC00D7C1CA /* PDBulletController.m in Sources */,
 				ECC8F30A203FC14D00D7C1CA /* ViewController.m in Sources */,
 				DD275B5F2408E30400F51E89 /* PDDanmakuItemCell.m in Sources */,
-				ECC8F342203FC31000D7C1CA /* CALayer+PDAdd.m in Sources */,
 				DD275B662408EBA400F51E89 /* PDDanmakuItemQueue.m in Sources */,
-				ECC8F33A203FC26300D7C1CA /* PDBulletCell.m in Sources */,
 				DD275B632408E92600F51E89 /* PDDanmakuBeltView.m in Sources */,
-				ECC8F34D203FF3E500D7C1CA /* UILabel+PDAdd.m in Sources */,
 				DD275B592408D51A00F51E89 /* CADisplayLink+PDAdd.m in Sources */,
 				ECC8F315203FC14D00D7C1CA /* main.m in Sources */,
 				DD275B5C2408E29D00F51E89 /* PDDanmakuController.m in Sources */,
-				ECC8F33F203FC30500D7C1CA /* UIView+PDAdd.m in Sources */,
 				ECC8F307203FC14D00D7C1CA /* AppDelegate.m in Sources */,
-				ECC8F348203FC6B700D7C1CA /* UIColor+PDAdd.m in Sources */,
-				ECC8F3592040017400D7C1CA /* PDBulletEntity.m in Sources */,
-				ECC8F350203FFD5900D7C1CA /* PDTrajectoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
