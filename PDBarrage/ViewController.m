@@ -61,7 +61,9 @@
     cell.item = item;
     cell.contentSize = CGSizeMake(80.f, 30.f);
     cell.velocity = 200.f;
-    cell.position = PDDanmakuItemCellPositionTop;
+
+    PDDanmakuItemCellPosition position = rand() % 3;
+    cell.position = position;
     cell.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.3f];
     return cell;
 }

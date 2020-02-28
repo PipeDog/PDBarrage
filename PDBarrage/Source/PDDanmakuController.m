@@ -21,14 +21,6 @@
 
 @implementation PDDanmakuController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self loadViewIfNeeded];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
