@@ -21,6 +21,12 @@
 
 @implementation ViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    // Call resume to enter active status.
+    [self.danmakuController resume];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -110,8 +116,6 @@
         _danmakuController = [[PDDanmakuController alloc] init];
         _danmakuController.delegate = self;
         _danmakuController.dataSource = self;
-        
-        [_danmakuController start];
     }
     return _danmakuController;
 }

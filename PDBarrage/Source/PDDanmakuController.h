@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)receive:(PDDanmakuDataSource)dataSource;
 
-- (void)start;
-- (void)stop;
+- (void)resume; // Call resume to enter active status.
+- (void)pause;
 
 - (void)removeAllBuffer;
 

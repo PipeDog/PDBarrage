@@ -83,7 +83,7 @@
     [beltView receive:dataSource];
 }
 
-- (void)start {
+- (void)resume {
     self.active = YES;
     
     while (self.bufferQueue.count > 0) {
@@ -92,7 +92,7 @@
     }
 }
 
-- (void)stop {
+- (void)pause {
     self.active = NO;
     
     for (PDDanmakuBeltView *beltView in self.beltViews) {
