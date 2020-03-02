@@ -42,7 +42,7 @@
     }
     
     PDDanmakuDataSource dataSource = [self.queue head];
-    PDDanmakuItemCell *danmakuItemCell = [self.dataSource danmakuBeltView:self cellForDataSource:dataSource];
+    PDDanmakuItemCell *danmakuItemCell = [self.dataSource cellForDataSource:dataSource inBeltView:self];
     danmakuItemCell.internalDelegate = self.delegate;
 
     if (!danmakuItemCell) {
@@ -77,8 +77,7 @@
             continue;
         }
         
-        [self.delegate danmakuBeltView:self
-                   didSelectItemInCell:(PDDanmakuItemCell *)subview];
+        [self.delegate didClickCell:(PDDanmakuItemCell *)subview inBeltView:self];
         break;
     }
 }
@@ -94,8 +93,8 @@
     }
 }
 
-- (void)removeAllItems {
-    [self.queue removeAllItems];
+- (void)removeAllBuffer {
+    [self.queue removeAllNodes];
 
     while (self.subviews.count > 0) {
         UIView *subview = self.subviews.lastObject;
@@ -107,13 +106,13 @@
 - (void)setDelegate:(id<PDDanmakuBeltViewDelegate>)delegate {
     _delegate = delegate;
     
-    NSAssert([_delegate respondsToSelector:@selector(danmakuBeltView:didSelectItemInCell:)], @"The protocol methods `- danmakuBeltView:didSelectItemInCell:` must be impl!");
+    NSAssert([_delegate respondsToSelector:@selector(didClickCell:inBeltView:)], @"The protocol methods `- didClickCell:inBeltView:` must be impl!");
 }
 
 - (void)setDataSource:(id<PDDanmakuBeltViewDataSource>)dataSource {
     _dataSource = dataSource;
     
-    NSAssert([_dataSource respondsToSelector:@selector(danmakuBeltView:cellForDataSource:)], @"The protocol methods `- danmakuBeltView:cellForDataSource:` must be impl!");
+    NSAssert([_dataSource respondsToSelector:@selector(cellForDataSource:inBeltView:)], @"The protocol methods `- cellForDataSource:inBeltView:` must be impl!");
 }
 
 @end

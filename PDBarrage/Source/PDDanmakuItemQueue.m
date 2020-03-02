@@ -59,7 +59,7 @@
     return !(_holder.count > 0);
 }
 
-- (void)removeAllItems {
+- (void)removeAllNodes {
     [_holder removeAllObjects];
 }
 

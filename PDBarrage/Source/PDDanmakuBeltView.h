@@ -19,19 +19,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<PDDanmakuBeltViewDataSource> dataSource;
 
 - (void)receive:(PDDanmakuDataSource)dataSource;
-- (void)removeAllItems;
+- (void)removeAllBuffer;
 
 @end
 
 @protocol PDDanmakuBeltViewDelegate <PDDanmakuItemCellInternalDelegate>
 
-- (void)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView didSelectItemInCell:(PDDanmakuItemCell *)cell;
+- (void)didClickCell:(PDDanmakuItemCell *)cell inBeltView:(PDDanmakuBeltView *)beltView;
 
 @end
 
 @protocol PDDanmakuBeltViewDataSource <NSObject>
 
-- (__kindof PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForDataSource:(PDDanmakuDataSource)dataSource;
+- (__kindof PDDanmakuItemCell *)cellForDataSource:(PDDanmakuDataSource)dataSource inBeltView:(PDDanmakuBeltView *)beltView;
 
 @end
 

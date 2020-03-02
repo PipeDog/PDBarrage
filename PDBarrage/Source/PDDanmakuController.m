@@ -96,23 +96,23 @@
     self.active = NO;
     
     for (PDDanmakuBeltView *beltView in self.beltViews) {
-        [beltView removeAllItems];
+        [beltView removeAllBuffer];
     }
 }
 
 - (void)removeAllBuffer {
-    [self.bufferQueue removeAllItems];
+    [self.bufferQueue removeAllNodes];
 }
 
 #pragma mark - PDDanmakuBeltViewDelegate && PDDanmakuBeltViewDataSource
-- (void)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView didSelectItemInCell:(PDDanmakuItemCell *)cell {
-    if ([self.delegate respondsToSelector:@selector(danmakuController:didSelectItemInCell:)]) {
-        [self.delegate danmakuController:self didSelectItemInCell:cell];
+- (void)didClickCell:(PDDanmakuItemCell *)cell inBeltView:(PDDanmakuBeltView *)beltView {
+    if ([self.delegate respondsToSelector:@selector(didClickCell:inDanmakuController:)]) {
+        [self.delegate didClickCell:cell inDanmakuController:self];
     }
 }
 
-- (PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForDataSource:(PDDanmakuDataSource)dataSource {
-    return [self.dataSource danmakuController:self cellForDataSource:dataSource];
+- (PDDanmakuItemCell *)cellForDataSource:(PDDanmakuDataSource)dataSource inBeltView:(PDDanmakuBeltView *)beltView {
+    return [self.dataSource cellForDataSource:dataSource inDanmakuController:self];
 }
 
 - (CGFloat)beltWidthForCell:(PDDanmakuItemCell *)cell {
@@ -131,7 +131,7 @@
 }
 
 - (CGSize)sizeForCell:(PDDanmakuItemCell *)cell {
-    return [self.delegate danmakuController:self sizeForItemInCell:cell];
+    return [self.delegate sizeForCell:cell inDanmakuController:self];
 }
 
 #pragma mark - Setter Methods
@@ -139,7 +139,7 @@
     _delegate = delegate;
     
     NSAssert([_delegate respondsToSelector:@selector(heightForBeltInDanmakuController:)], @"The protocol method `- heightForBeltInDanmakuController:` must be impl!");
-    NSAssert([_delegate respondsToSelector:@selector(danmakuController:sizeForItemInCell:)], @"The protocol method `- danmakuController:sizeForItemInCell:` must be impl!");
+    NSAssert([_delegate respondsToSelector:@selector(sizeForCell:inDanmakuController:)], @"The protocol method `- sizeForCell:inDanmakuController:` must be impl!");
 
     [self createLayoutBelts];
 }
@@ -148,7 +148,7 @@
     _dataSource = dataSource;
     
     NSAssert([_dataSource respondsToSelector:@selector(numberOfBeltsInDanmakuController:)], @"The protocol method `- numberOfBeltsInDanmakuController:` must be impl!");
-    NSAssert([_dataSource respondsToSelector:@selector(danmakuController:cellForDataSource:)], @"The protocol methods `- danmakuController:cellForDataSource:` must be impl!");
+    NSAssert([_dataSource respondsToSelector:@selector(cellForDataSource:inDanmakuController:)], @"The protocol methods `- cellForDataSource:inDanmakuController:");
     
     [self createLayoutBelts];
 }

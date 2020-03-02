@@ -56,7 +56,7 @@
     return 4;
 }
 
-- (PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForDataSource:(nonnull PDDanmakuDataSource)dataSource {
+- (PDDanmakuItemCell *)cellForDataSource:(PDDanmakuDataSource)dataSource inDanmakuController:(PDDanmakuController *)danmakuController {
     PDDanmakuItemCell *cell = [[PDDanmakuItemCell alloc] init];
     cell.dataSource = dataSource;
     cell.velocity = 200.f;
@@ -67,7 +67,7 @@
     return cell;
 }
 
-- (CGSize)danmakuController:(PDDanmakuController *)danmakuController sizeForItemInCell:(PDDanmakuItemCell *)cell {
+- (CGSize)sizeForCell:(PDDanmakuItemCell *)cell inDanmakuController:(PDDanmakuController *)danmakuController {
     return CGSizeMake(80.f, 30.f);
 }
 
@@ -83,7 +83,7 @@
     return 30.f;
 }
 
-- (void)danmakuController:(PDDanmakuController *)danmakuController didSelectItemInCell:(__kindof PDDanmakuItemCell *)cell {
+- (void)didClickCell:(__kindof PDDanmakuItemCell *)cell inDanmakuController:(PDDanmakuController *)danmakuController {
     self.textLabel.text = cell.dataSource;
 }
 

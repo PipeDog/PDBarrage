@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable PDDanmakuDataSource)head;
 - (nullable PDDanmakuDataSource)tail;
 
-- (void)removeAllItems;
+- (void)removeAllNodes;
 
 @end
 

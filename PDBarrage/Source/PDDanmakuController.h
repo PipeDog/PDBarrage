@@ -30,19 +30,20 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol PDDanmakuControllerDataSource <NSObject>
 
 - (NSInteger)numberOfBeltsInDanmakuController:(PDDanmakuController *)danmakuController;
-- (__kindof PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForDataSource:(PDDanmakuDataSource)dataSource;
+
+- (__kindof PDDanmakuItemCell *)cellForDataSource:(PDDanmakuDataSource)dataSource inDanmakuController:(PDDanmakuController *)danmakuController;
 
 @end
 
 @protocol PDDanmakuControllerDelegate <NSObject>
 
 - (CGFloat)heightForBeltInDanmakuController:(PDDanmakuController *)danmakuController;
-- (CGSize)danmakuController:(PDDanmakuController *)danmakuController sizeForItemInCell:(PDDanmakuItemCell *)cell;
+- (CGSize)sizeForCell:(PDDanmakuItemCell *)cell inDanmakuController:(PDDanmakuController *)danmakuController;
 
 @optional
 - (CGFloat)beltSpacingInDanmakuController:(PDDanmakuController *)danmakuController;
 - (CGFloat)itemSpacingInDanmakuController:(PDDanmakuController *)danmakuController;
-- (void)danmakuController:(PDDanmakuController *)danmakuController didSelectItemInCell:(__kindof PDDanmakuItemCell *)cell;
+- (void)didClickCell:(__kindof PDDanmakuItemCell *)cell inDanmakuController:(PDDanmakuController *)danmakuController;
 
 @end
 
