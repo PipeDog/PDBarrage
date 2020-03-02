@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<PDDanmakuControllerDataSource> dataSource;
 @property (nonatomic, weak) id<PDDanmakuControllerDelegate> delegate;
 
-- (void)receiveItem:(PDDanmakuItem)item;
+- (void)receive:(PDDanmakuDataSource)dataSource;
 
 - (void)start;
 - (void)stop;
@@ -30,13 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol PDDanmakuControllerDataSource <NSObject>
 
 - (NSInteger)numberOfBeltsInDanmakuController:(PDDanmakuController *)danmakuController;
-- (__kindof PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForItem:(PDDanmakuItem)item;
+- (__kindof PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForDataSource:(PDDanmakuDataSource)dataSource;
 
 @end
 
 @protocol PDDanmakuControllerDelegate <NSObject>
 
 - (CGFloat)heightForBeltInDanmakuController:(PDDanmakuController *)danmakuController;
+- (CGSize)danmakuController:(PDDanmakuController *)danmakuController sizeForItemInCell:(PDDanmakuItemCell *)cell;
 
 @optional
 - (CGFloat)beltSpacingInDanmakuController:(PDDanmakuController *)danmakuController;

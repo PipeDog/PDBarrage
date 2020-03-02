@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<PDDanmakuBeltViewDelegate> delegate;
 @property (nonatomic, weak) id<PDDanmakuBeltViewDataSource> dataSource;
 
-- (void)receiveItem:(PDDanmakuItem)item;
+- (void)receive:(PDDanmakuDataSource)dataSource;
 - (void)removeAllItems;
 
 @end
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol PDDanmakuBeltViewDataSource <NSObject>
 
-- (__kindof PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForItem:(PDDanmakuItem)item;
+- (__kindof PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForDataSource:(PDDanmakuDataSource)dataSource;
 
 @end
 

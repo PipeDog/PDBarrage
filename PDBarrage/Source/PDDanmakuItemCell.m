@@ -25,7 +25,6 @@ CGFloat const PDDanmakuItemCellMoveVelocityDefaultValue = 120.f;
     self = [super initWithFrame:CGRectZero];
     if (self) {
         _velocity = PDDanmakuItemCellMoveVelocityDefaultValue;
-        _contentSize = CGSizeZero;
         _position = PDDanmakuItemCellPositionCenterY;
     }
     return self;
@@ -41,11 +40,11 @@ CGFloat const PDDanmakuItemCellMoveVelocityDefaultValue = 120.f;
     
     CGFloat beltHeight = [self.internalDelegate beltHeightForCell:self];
     CGFloat beltWidth = [self.internalDelegate beltWidthForCell:self];
-    CGFloat moveDistance = self.contentSize.width + beltWidth;
+    CGSize size = [self.internalDelegate sizeForCell:self];
+    CGFloat moveDistance = size.width + beltWidth;
     NSTimeInterval duration = moveDistance / self.velocity;
     
     // Calculate frame.
-    CGSize contentSize = self.contentSize;
     CGFloat top = 0.f;
     
     switch (self.position) {
@@ -53,22 +52,22 @@ CGFloat const PDDanmakuItemCellMoveVelocityDefaultValue = 120.f;
             top = 0.f;
         } break;
         case PDDanmakuItemCellPositionCenterY: {
-            top = (beltHeight - contentSize.height) / 2.f;
+            top = (beltHeight - size.height) / 2.f;
         } break;
         case PDDanmakuItemCellPositionBottom: {
-            top = (beltHeight - contentSize.height);
+            top = (beltHeight - size.height);
         } break;
         default: break;
     }
     
     CGRect beginRect = CGRectMake(beltWidth,
                                   top,
-                                  self.contentSize.width,
-                                  self.contentSize.height);
-    CGRect endRect = CGRectMake(-contentSize.width,
+                                  size.width,
+                                  size.height);
+    CGRect endRect = CGRectMake(-size.width,
                                 top,
-                                self.contentSize.width,
-                                self.contentSize.height);
+                                size.width,
+                                size.height);
     
     // Launch danmaku cell.
     self.frame = beginRect;

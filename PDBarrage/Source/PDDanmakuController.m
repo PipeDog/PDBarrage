@@ -69,10 +69,10 @@
 }
 
 #pragma mark - Public Methods
-- (void)receiveItem:(PDDanmakuItem)item {
-    if (!item) { return; }
+- (void)receive:(PDDanmakuDataSource)dataSource {
+    if (!dataSource) { return; }
     if (!self.isActive) {
-        [self.bufferQueue enqueue:item];
+        [self.bufferQueue enqueue:dataSource];
         return;
     }
     
@@ -80,15 +80,15 @@
     self.index++;
 
     PDDanmakuBeltView *beltView = self.beltViews[index];
-    [beltView receiveItem:item];    
+    [beltView receive:dataSource];
 }
 
 - (void)start {
     self.active = YES;
     
     while (self.bufferQueue.count > 0) {
-        PDDanmakuItem item = [self.bufferQueue dequeue];
-        [self receiveItem:item];
+        PDDanmakuDataSource dataSource = [self.bufferQueue dequeue];
+        [self receive:dataSource];
     }
 }
 
@@ -111,30 +111,45 @@
     }
 }
 
-- (PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForItem:(PDDanmakuItem)item {
-    return [self.dataSource danmakuController:self cellForItem:item];
+- (PDDanmakuItemCell *)danmakuBeltView:(PDDanmakuBeltView *)danmakuBeltView cellForDataSource:(PDDanmakuDataSource)dataSource {
+    return [self.dataSource danmakuController:self cellForDataSource:dataSource];
 }
 
-- (CGFloat)beltWidthForCell:(__kindof PDDanmakuItemCell *)cell {
+- (CGFloat)beltWidthForCell:(PDDanmakuItemCell *)cell {
     return CGRectGetWidth(self.view.bounds);
 }
 
-- (CGFloat)beltHeightForCell:(__kindof PDDanmakuItemCell *)cell {
+- (CGFloat)beltHeightForCell:(PDDanmakuItemCell *)cell {
     return [self.delegate heightForBeltInDanmakuController:self];
 }
 
-- (CGFloat)itemSpacingForCell:(__kindof PDDanmakuItemCell *)cell {
-    return [self.delegate itemSpacingInDanmakuController:self];
+- (CGFloat)itemSpacingForCell:(PDDanmakuItemCell *)cell {
+    if ([self.delegate respondsToSelector:@selector(itemSpacingInDanmakuController:)]) {
+        return [self.delegate itemSpacingInDanmakuController:self];
+    }
+    return 20.f;
+}
+
+- (CGSize)sizeForCell:(PDDanmakuItemCell *)cell {
+    return [self.delegate danmakuController:self sizeForItemInCell:cell];
 }
 
 #pragma mark - Setter Methods
 - (void)setDelegate:(id<PDDanmakuControllerDelegate>)delegate {
     _delegate = delegate;
+    
+    NSAssert([_delegate respondsToSelector:@selector(heightForBeltInDanmakuController:)], @"The protocol method `- heightForBeltInDanmakuController:` must be impl!");
+    NSAssert([_delegate respondsToSelector:@selector(danmakuController:sizeForItemInCell:)], @"The protocol method `- danmakuController:sizeForItemInCell:` must be impl!");
+
     [self createLayoutBelts];
 }
 
 - (void)setDataSource:(id<PDDanmakuControllerDataSource>)dataSource {
     _dataSource = dataSource;
+    
+    NSAssert([_dataSource respondsToSelector:@selector(numberOfBeltsInDanmakuController:)], @"The protocol method `- numberOfBeltsInDanmakuController:` must be impl!");
+    NSAssert([_dataSource respondsToSelector:@selector(danmakuController:cellForDataSource:)], @"The protocol methods `- danmakuController:cellForDataSource:` must be impl!");
+    
     [self createLayoutBelts];
 }
 

@@ -16,11 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) NSUInteger count;
 @property (nonatomic, assign, readonly, getter=isEmpty) BOOL empty;
 
-- (void)enqueue:(PDDanmakuItem)item;
-- (nullable PDDanmakuItem)dequeue;
+- (void)enqueue:(PDDanmakuDataSource)node;
+- (nullable PDDanmakuDataSource)dequeue;
 
-- (nullable PDDanmakuItem)head;
-- (nullable PDDanmakuItem)tail;
+- (nullable PDDanmakuDataSource)head;
+- (nullable PDDanmakuDataSource)tail;
 
 - (void)removeAllItems;
 

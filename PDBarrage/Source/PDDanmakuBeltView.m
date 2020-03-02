@@ -41,8 +41,8 @@
         return;
     }
     
-    PDDanmakuItem item = [self.queue head];
-    PDDanmakuItemCell *danmakuItemCell = [self.dataSource danmakuBeltView:self cellForItem:item];
+    PDDanmakuDataSource dataSource = [self.queue head];
+    PDDanmakuItemCell *danmakuItemCell = [self.dataSource danmakuBeltView:self cellForDataSource:dataSource];
     danmakuItemCell.internalDelegate = self.delegate;
 
     if (!danmakuItemCell) {
@@ -84,12 +84,10 @@
 }
 
 #pragma mark - Public Methods
-- (void)receiveItem:(PDDanmakuItem)item {
-    if (!item) {
-        return;
-    }
+- (void)receive:(PDDanmakuDataSource)dataSource {
+    if (!dataSource) { return; }
 
-    [self.queue enqueue:item];
+    [self.queue enqueue:dataSource];
 
     if (!(self.queue.count > 1)) {
         [self send];
@@ -115,7 +113,7 @@
 - (void)setDataSource:(id<PDDanmakuBeltViewDataSource>)dataSource {
     _dataSource = dataSource;
     
-    NSAssert([_dataSource respondsToSelector:@selector(danmakuBeltView:cellForItem:)], @"The protocol methods `- danmakuBeltView:cellForItem:` must be impl!");
+    NSAssert([_dataSource respondsToSelector:@selector(danmakuBeltView:cellForDataSource:)], @"The protocol methods `- danmakuBeltView:cellForDataSource:` must be impl!");
 }
 
 @end

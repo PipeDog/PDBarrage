@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol PDDanmakuItemCellInternalDelegate <NSObject>
 
-- (CGFloat)beltWidthForCell:(__kindof PDDanmakuItemCell *)cell;
-- (CGFloat)beltHeightForCell:(__kindof PDDanmakuItemCell *)cell;
-- (CGFloat)itemSpacingForCell:(__kindof PDDanmakuItemCell *)cell;
+- (CGFloat)beltWidthForCell:(PDDanmakuItemCell *)cell;
+- (CGFloat)beltHeightForCell:(PDDanmakuItemCell *)cell;
+- (CGFloat)itemSpacingForCell:(PDDanmakuItemCell *)cell;
+- (CGSize)sizeForCell:(PDDanmakuItemCell *)cell;
 
 @end
 

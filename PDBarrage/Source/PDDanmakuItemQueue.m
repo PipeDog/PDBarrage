@@ -21,9 +21,9 @@
 }
 
 #pragma mark - Public Methods
-- (void)enqueue:(PDDanmakuItem)item {
-    if (item) {
-        [_holder addObject:item];
+- (void)enqueue:(PDDanmakuDataSource)node {
+    if (node) {
+        [_holder addObject:node];
     }
 }
 
@@ -37,14 +37,14 @@
     return item;
 }
 
-- (PDDanmakuItem)head {
+- (PDDanmakuDataSource)head {
     if (!_holder.count) {
         return nil;
     }
     return _holder.firstObject;
 }
 
-- (PDDanmakuItem)tail {
+- (PDDanmakuDataSource)tail {
     if (!_holder.count) {
         return nil;
     }

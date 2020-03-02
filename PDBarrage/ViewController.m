@@ -48,7 +48,7 @@
 
 - (IBAction)didClickButton:(id)sender {
     NSString *text = self.dataArray[rand() % 10];
-    [self.danmakuController receiveItem:text];
+    [self.danmakuController receive:text];
 }
 
 #pragma mark - PDDanmakuControllerDelegate && PDDanmakuControllerDataSource
@@ -56,16 +56,19 @@
     return 4;
 }
 
-- (PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForItem:(PDDanmakuItem)item {
+- (PDDanmakuItemCell *)danmakuController:(PDDanmakuController *)danmakuController cellForDataSource:(nonnull PDDanmakuDataSource)dataSource {
     PDDanmakuItemCell *cell = [[PDDanmakuItemCell alloc] init];
-    cell.item = item;
-    cell.contentSize = CGSizeMake(80.f, 30.f);
+    cell.dataSource = dataSource;
     cell.velocity = 200.f;
 
     PDDanmakuItemCellPosition position = rand() % 3;
     cell.position = position;
     cell.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.3f];
     return cell;
+}
+
+- (CGSize)danmakuController:(PDDanmakuController *)danmakuController sizeForItemInCell:(PDDanmakuItemCell *)cell {
+    return CGSizeMake(80.f, 30.f);
 }
 
 - (CGFloat)heightForBeltInDanmakuController:(PDDanmakuController *)danmakuController {
@@ -81,7 +84,7 @@
 }
 
 - (void)danmakuController:(PDDanmakuController *)danmakuController didSelectItemInCell:(__kindof PDDanmakuItemCell *)cell {
-    self.textLabel.text = cell.item;
+    self.textLabel.text = cell.dataSource;
 }
 
 #pragma mark - Getter Methods
