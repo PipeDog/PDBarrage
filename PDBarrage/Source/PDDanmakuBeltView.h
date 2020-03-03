@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<PDDanmakuBeltViewDelegate> delegate;
 @property (nonatomic, weak) id<PDDanmakuBeltViewDataSource> dataSource;
+@property (nonatomic, assign) NSInteger index;
 
 - (void)receive:(PDDanmakuDataSource)dataSource;
 - (void)removeAllBuffer;

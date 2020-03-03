@@ -58,7 +58,7 @@
 }
 
 #pragma mark - PDDanmakuControllerDelegate && PDDanmakuControllerDataSource
-- (NSInteger)numberOfBeltsInDanmakuController:(PDDanmakuController *)danmakuController {
+- (NSInteger)numberOfRowsInDanmakuController:(PDDanmakuController *)danmakuController {
     return 4;
 }
 
@@ -77,11 +77,11 @@
     return CGSizeMake(80.f, 30.f);
 }
 
-- (CGFloat)heightForBeltInDanmakuController:(PDDanmakuController *)danmakuController {
+- (CGFloat)heightForRowAtIndex:(NSInteger)index inDanmakuController:(PDDanmakuController *)danmakuController {
     return 40.f;
 }
 
-- (CGFloat)beltSpacingInDanmakuController:(PDDanmakuController *)danmakuController {
+- (CGFloat)lineSpacingInDanmakuController:(PDDanmakuController *)danmakuController {
     return 10.f;
 }
 

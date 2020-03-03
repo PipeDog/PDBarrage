@@ -26,6 +26,7 @@ CGFloat const PDDanmakuItemCellMoveVelocityDefaultValue = 120.f;
     if (self) {
         _velocity = PDDanmakuItemCellMoveVelocityDefaultValue;
         _position = PDDanmakuItemCellPositionCenterY;
+        _row = -1;
     }
     return self;
 }
@@ -38,7 +39,7 @@ CGFloat const PDDanmakuItemCellMoveVelocityDefaultValue = 120.f;
     self.callnext = callnext;
     self.completion = completion;
     
-    CGFloat beltHeight = [self.internalDelegate beltHeightForCell:self];
+    CGFloat beltHeight = [self.internalDelegate beltHeightForCell:self inRow:self.row];
     CGFloat beltWidth = [self.internalDelegate beltWidthForCell:self];
     CGSize size = [self.internalDelegate sizeForCell:self];
     CGFloat moveDistance = size.width + beltWidth;

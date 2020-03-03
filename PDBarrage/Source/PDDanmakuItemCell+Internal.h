@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol PDDanmakuItemCellInternalDelegate <NSObject>
 
 - (CGFloat)beltWidthForCell:(PDDanmakuItemCell *)cell;
-- (CGFloat)beltHeightForCell:(PDDanmakuItemCell *)cell;
+- (CGFloat)beltHeightForCell:(PDDanmakuItemCell *)cell inRow:(NSInteger)row;
 - (CGFloat)itemSpacingForCell:(PDDanmakuItemCell *)cell;
 - (CGSize)sizeForCell:(PDDanmakuItemCell *)cell;
 
@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PDDanmakuItemCell ()
 
 @property (nonatomic, weak) id<PDDanmakuItemCellInternalDelegate> internalDelegate;
+@property (nonatomic, assign) NSInteger row; // Default -1
 
 - (void)launchWithCallnext:(void (^)(__kindof PDDanmakuItemCell *cell))callnext completion:(void (^ __nullable)(void))completion;
 

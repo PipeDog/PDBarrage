@@ -44,6 +44,7 @@
     PDDanmakuDataSource dataSource = [self.queue head];
     PDDanmakuItemCell *danmakuItemCell = [self.dataSource cellForDataSource:dataSource inBeltView:self];
     danmakuItemCell.internalDelegate = self.delegate;
+    danmakuItemCell.row = self.index;
 
     if (!danmakuItemCell) {
         [self.queue dequeue];
